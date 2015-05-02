@@ -134,7 +134,6 @@ def test_com_port(port=[]):
     Programmer + Cart = 2
     """
     # print("Testing", port)
-    print(port)
     s = serial.Serial(port, 115200, timeout=2)
     s.write(bytes([1]))
     s.write(bytes([13]))
